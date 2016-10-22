@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
  
     <link href="css/bootstrap.min.css" rel="stylesheet">
       <style>
@@ -15,38 +17,71 @@
               font-size: 4vh;
               opacity: 0.60;
           }
-          .form-control, .btn{
-              :hover {
+        .input-group:hover .form-control{
+             
+                cursor: pointer;
+                opacity:1;
+                transition: opacity 2s;
+                -webkit-transition: opacity 0.5s; /* Safari */
+            
+          }
+          
+          .input-group:hover .btn{
+             
                  opacity: 1;
-            }   
+                cursor: pointer;
+                transition: opacity 2s;
+                -webkit-transition: opacity 0.5s; /* Safari */
+            
           }
           .btn{
               height: 10vh;
+              width: 15vh;
               font-size: 4vh;
               opacity: 0.60;
           }
-          .btn:hover{
-              height: 10vh;
-              font-size: 4vh;
-              opacity: 1;
-          }
+          .rect{
+              width: 50vh;
+              background-color: darkgray;
+              background: rgba(255,255,255,0.65);
+              height: 23vh;
+              
+              
+              margin:0 auto;
+              margin-top:65.5vh;
+              border-radius: 40px 40px 0px 0px;
+             
+              
+              background: -webkit-linear-gradient(top ,rgba(247, 243, 237,0.50),rgba(247, 243, 237,1)); /*Safari 5.1-6*/
+              background: -o-linear-gradient(top,rgba(247, 243, 237,0.50),rgba(247, 243, 237,1)); /*Opera 11.1-12*/
+              background: -moz-linear-gradient(top,rgba(247, 243, 237,0.50),rgba(247, 243, 237,1)); /*Fx 3.6-15*/
+              background: linear-gradient(to top, rgba(247, 243, 237,0.50), rgba(247, 243, 237,1)); /*Standard*/
+}
+             
+          }   
       </style>
   </head>
   <body  background="MAP.jpg" style=" background-size:cover;">
     
       <div class="container" style="margin-top: 10px;" >
-          <div class="row" align="centre">
+          
+          <div class="row" align="center">
           <div class="col-lg-12">
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search for...">
+              <input type="text" class="form-control" placeholder="Търси...">
               <span class="input-group-btn">
-                <button class="btn btn-secondary" type="button">Go!</button>
+                <button class="btn btn-secondary" type="button"><span class="glyphicon glyphicon-search"></span></button>
               </span>
             </div>
           </div>
-        </div>
+        </div>        
       </div>
-       
+      
+            <div class="rect" valign="bottom">
+                <div class="w3-container w3-center w3-animate-bottom" style="font-size: 30px;">bla-bla</div>
+            </div>
+      
+      
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
